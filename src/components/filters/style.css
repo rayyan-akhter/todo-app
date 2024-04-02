@@ -1,4 +1,3 @@
-/* Filters.css */
 .filters {
     height: 50px;
     width: 100%;
@@ -47,3 +46,16 @@
     color: rgba(169, 0, 182, 0.5);
   }
   
+  @media  screen and  (max-width:600px) {
+    .filters{
+      width: 80%;
+      font-size: smaller;
+      padding: 0px 3px;
+      justify-content: center;
+      gap: 10px;
+    }
+    .status{
+      gap: 5px;
+    }
+    
+  }

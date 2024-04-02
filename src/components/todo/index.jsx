@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import correctIcon from "../assets/correct.png";
-import crossIcon from "../assets/cross.png";
-import editIcon from "../assets/edit.png";
+import correctIcon from "../../assets/correct.png";
+import crossIcon from "../../assets/cross.png";
+import editIcon from "../../assets/edit.png";
 import "./style.css"
 
 function Todo({ deleteTodo, todo, todos, setTodos, isLastTodo }) {

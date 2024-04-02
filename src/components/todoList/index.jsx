@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Todo from "../todo/index";
-import Filters from "../filters/index";
-import wavesImg from "../assets/wave.svg";
+import Todo from "../todo/";
+import Filters from "../filters/";
+import wavesImg from "../../assets/wave.svg";
 import "./style.css"
 
 const TodoList = () => {

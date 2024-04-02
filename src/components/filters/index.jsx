@@ -7,10 +7,14 @@ function Filters({ todos, setFilterText, setTodos, fliterText }) {
     setTodos(updatedTodos);
     localStorage.setItem("todos", JSON.stringify(updatedTodos));
   };
+  const leftItems = () => {
+    const activeTodos = todos.filter(todo => todo.status !== "completed");
+    return activeTodos.length;
+  };
 
   return (
     <div className="filters">
-      <div className="showRemaining">{todos.length} items left</div>
+      <div className="showRemaining">{leftItems()} items left</div>
       <div className="status">
         <div
           className={`all ${fliterText === "" ? "pinkColor" : ""}`}
